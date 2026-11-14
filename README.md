@@ -111,9 +111,11 @@ VITE_API_URL=http://127.0.0.1:8000
 
 A Netlify publica a interface React. A API FastAPI precisa estar publicada em um serviço que execute Python (por exemplo, Render ou Railway) antes de a recomendação funcionar em produção.
 
+Site publicado: https://creative-cassata-54a155.netlify.app/
+
 1. Envie este projeto para um repositório Git e conecte o repositório à Netlify.
 2. A configuração em `netlify.toml` define a pasta base (`frontend`), o comando de build (`npm run build`) e a pasta publicada (`dist`).
-3. Nas configurações do site na Netlify, adicione a variável de ambiente `VITE_API_URL` com a URL pública da API, sem `/` no final, por exemplo `https://sua-api.onrender.com`.
+3. Nas configurações do site na Netlify, adicione a variável de ambiente `VITE_API_URL` com a URL pública da API, sem `/` no final, por exemplo `https://sua-api.onrender.com`. A URL do site é `https://creative-cassata-54a155.netlify.app/`.
 4. Faça um novo deploy depois de salvar a variável.
 
 Para publicar a API em um serviço Python, configure a pasta `backend` como diretório raiz, instale `requirements.txt` e use este comando de inicialização:
