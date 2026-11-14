@@ -70,7 +70,7 @@ function App() {
         <section className="intro">
           <p className="eyebrow">RECOMENDAÇÃO DE CULTURAS</p>
           <h2>Encontre a cultura ideal para o seu solo.</h2>
-          <p>Informe as condições do solo e do clima. Nosso modelo analisa os dados e sugere a cultura mais adequada.</p>
+          <p>Informe as condições do solo e do clima. Nosso modelo analisa os dados e sugere o culturo mais adequada.</p>
         </section>
 
         <div className="content-grid">
