@@ -75,7 +75,7 @@ function App() {
 
         <div className="content-grid">
           <section className="panel form-panel">
-            <div className="panel-heading"><div><h3>Condições da plantação</h3><p>Preencha os sete indicadores para receber uma recomendação.</p></div><span className="step-badge">7 dados</span></div>
+            <div className="panel-heading"><div><h3>Condições da plantação</h3><p>Preencha os sete indicadores para receber uma recomendação.</p></div></div>
             <form onSubmit={handleSubmit}>
               <div className="field-grid">
                 {fields.map(({ name, label, hint }) => (
