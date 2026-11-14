@@ -62,13 +62,13 @@ function App() {
       <header className="topbar">
         <div className="container brand-row">
           <div className="brand-mark" aria-hidden="true">🌱</div>
-          <div><p className="eyebrow">AGRICULTURA INTELIGENTE</p><h1>RecomendaCultura</h1></div>
+          <div><p className="eyebrow">AGRICULTURA INTELIGENTE</p><h1>RecomendaCultivo</h1></div>
         </div>
       </header>
 
       <main className="container page-content">
         <section className="intro">
-          <p className="eyebrow">RECOMENDAÇÃO DE CULTURAS</p>
+          <p className="eyebrow">RECOMENDAÇÃO DE CULTIVO</p>
           <h2>Encontre a cultura ideal para o seu solo.</h2>
           <p>Informe as condições do solo e do clima. Nosso modelo analisa os dados e sugere o culturo mais adequada.</p>
         </section>
