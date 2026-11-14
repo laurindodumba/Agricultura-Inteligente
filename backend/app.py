@@ -4,6 +4,7 @@ from pydantic import BaseModel
 import joblib
 import pandas as pd
 from pathlib import Path
+import os
 
 
 
@@ -16,7 +17,12 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],
+    allow_origins=[
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+        *([os.environ["FRONTEND_ORIGIN"].rstrip("/")] if os.getenv("FRONTEND_ORIGIN") else []),
+    ],
+    allow_origin_regex=r"https://.*\.netlify\.app",
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
