@@ -69,8 +69,8 @@ function App() {
       <main className="container page-content">
         <section className="intro">
           <p className="eyebrow">RECOMENDAÇÃO DE CULTIVO</p>
-          <h2>Encontre a cultura ideal para o seu solo.</h2>
-          <p>Informe as condições do solo e do clima. Nosso modelo analisa os dados e sugere o culturo mais adequada.</p>
+          <h2>Encontre o cultivo ideal para o seu solo.</h2>
+          <p>Informe as condições do solo e do clima. Nosso modelo analisa os dados e sugere o cultivo mais adequado.</p>
         </section>
 
         <div className="content-grid">
