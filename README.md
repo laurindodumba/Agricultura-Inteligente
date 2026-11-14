@@ -1,4 +1,4 @@
-# RecomendaCultura
+# RecomendaCultivo
 
 Sistema de recomendação de culturas agrícolas baseado em Machine Learning. O projeto combina uma interface web em React com uma API em FastAPI para analisar dados do solo e do clima e sugerir a cultura mais adequada.
 
