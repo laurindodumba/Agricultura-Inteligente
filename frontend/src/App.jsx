@@ -27,7 +27,9 @@ function App() {
     setResult(null);
     setError('');
     try {
-      const apiUrl = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? 'http://127.0.0.1:8000' : '');
+      const apiUrl = import.meta.env.VITE_API_URL || (import.meta.env.DEV
+        ? 'http://127.0.0.1:8000'
+        : 'https://recomendacultura-api.onrender.com');
       if (!apiUrl) {
         throw new Error('A API ainda não está configurada. Defina VITE_API_URL na Netlify após publicar o backend.');
       }
@@ -104,7 +106,7 @@ function App() {
             <div className="result-note">A sugestão é uma estimativa baseada nos dados fornecidos. Considere também fatores locais e orientação agronômica.</div>
           </aside>
         </div>
-        <footer>RecomendaCultura <span>•</span> Apoio à decisão no campo</footer>
+        <footer>Apoio à decisão no campo</footer>
       </main>
     </div>
   );
