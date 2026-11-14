@@ -27,8 +27,12 @@ function App() {
     setResult(null);
     setError('');
     try {
+      const apiUrl = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? 'http://127.0.0.1:8000' : '');
+      if (!apiUrl) {
+        throw new Error('A API ainda não está configurada. Defina VITE_API_URL na Netlify após publicar o backend.');
+      }
       const payload = Object.fromEntries(Object.entries(formData).map(([key, value]) => [key, Number(value)]));
-      const response = await fetch(`${import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'}/predict`, {
+      const response = await fetch(`${apiUrl.replace(/\/$/, '')}/predict`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),

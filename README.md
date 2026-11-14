@@ -118,13 +118,13 @@ Site publicado: https://creative-cassata-54a155.netlify.app/
 3. Nas configurações do site na Netlify, adicione a variável de ambiente `VITE_API_URL` com a URL pública da API, sem `/` no final, por exemplo `https://sua-api.onrender.com`. A URL do site é `https://creative-cassata-54a155.netlify.app/`.
 4. Faça um novo deploy depois de salvar a variável.
 
-Para publicar a API em um serviço Python, configure a pasta `backend` como diretório raiz, instale `requirements.txt` e use este comando de inicialização:
+Para publicar a API no Render, crie um Blueprint a partir deste repositório. O arquivo `render.yaml` configura a pasta `backend`, instala `requirements.txt`, inicia o FastAPI e define a origem do frontend. O Render fornecerá uma URL pública `https://...onrender.com` quando a implantação terminar.
 
 ```bash
 uvicorn app:app --host 0.0.0.0 --port $PORT
 ```
 
-A API carrega `modelo.pkl` e o dataset a partir da própria pasta `backend`. Se usar um domínio próprio na Netlify, defina também `FRONTEND_ORIGIN` no serviço da API com a origem exata do site, por exemplo `https://meusite.com`.
+A API carrega `modelo.pkl` e o dataset a partir da própria pasta `backend`. Depois que o Render fornecer a URL da API, adicione-a na Netlify como `VITE_API_URL` e faça um novo deploy do frontend. Se usar um domínio próprio na Netlify, altere `FRONTEND_ORIGIN` no `render.yaml` para a origem exata desse domínio.
 
 ## Endpoint principal
 
