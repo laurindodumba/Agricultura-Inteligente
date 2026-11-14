@@ -168,6 +168,4 @@ python train_model.py
 
 Este projeto é uma ferramenta de apoio à decisão agronômica. A recomendação do modelo deve ser usada como orientação inicial e complementada por avaliação local, análise de solo e experiência técnica do produtor.
 
-## Autor
-
-Projeto desenvolvido para demonstração de aplicação de Machine Learning em recomendação de culturas agrícolas.
+## By: Laurindo Dumba
