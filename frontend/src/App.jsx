@@ -106,7 +106,6 @@ function App() {
             <div className="result-note">A sugestão é uma estimativa baseada nos dados fornecidos. Considere também fatores locais e orientação agronômica.</div>
           </aside>
         </div>
-        <footer>Apoio à decisão no campo</footer>
       </main>
     </div>
   );
