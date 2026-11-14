@@ -164,8 +164,4 @@ cd backend
 python train_model.py
 ```
 
-## Observações
-
-Este projeto é uma ferramenta de apoio à decisão agronômica. A recomendação do modelo deve ser usada como orientação inicial e complementada por avaliação local, análise de solo e experiência técnica do produtor.
-
 ## By: Laurindo Dumba
